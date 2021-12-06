@@ -7,6 +7,12 @@ html {
     font-size: 62.5%;
 }
 
+:root{
+    --barlow: 'Barlow', sans-serif;
+    --barlow-condensed: 'Barlow Condensed', sans-serif;;
+    --bellefair: 'Bellefair', serif;
+}
+
 body{
     width: 100%;
     height: auto;
@@ -45,11 +51,6 @@ body{
     display: block;
 }
 /*               body  */             
-:root{
-    --barlow: 'Barlow', sans-serif;
-    --barlow-condensed: 'Barlow Condensed', sans-serif;;
-    --bellefair: 'Bellefair', serif;
-}
 
 .main{
     /* width: 100%; */
