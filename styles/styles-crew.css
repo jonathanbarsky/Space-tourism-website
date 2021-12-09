@@ -16,7 +16,7 @@ html {
 body{
     width: 100%;
     height: auto;
-    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -51,13 +51,7 @@ body{
     display: block;
 }
 /*                                                      body  */
-body{
-    width: 100%;
-    height: auto;
-    background-image: url(../assets/crew/background-crew-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 main{
     color: #fff;
 }
