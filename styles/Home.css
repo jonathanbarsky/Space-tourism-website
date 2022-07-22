@@ -1,0 +1,112 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    align-items: center;
+    margin: 0 auto;
+}
+.home div{
+    margin: 15px 0 25px 0;
+}
+.home_title{
+    font-family: 'Barlow' Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: center;
+    color: #D0D6F9;
+}
+
+.home_title span{
+    font-family: 'Bellefair';
+    font-style: Regular;
+    font-size: 80px;
+    line-height: 120px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.home_copy{
+    font-family: 'Barlow';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #D0D6F9;
+    margin-top: 10px;
+}
+.home_figure{
+    width: 150px;
+    height: 150px;
+    margin: 50px 0 40px 0;
+}
+@media (min-width: 650px){
+    .home{
+        width: 55vw;
+        /* background-image: url(../src/assets/home/background-home-desktop.jpg); */
+
+    }
+    .home div{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .home_title{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+    .home_title span {
+        font-size: 150px;
+        line-height: 180px;
+    }
+    .home_copy{
+        margin: 30px 0 40px 0;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .home_figure{
+        width: 242px;
+        height: 242px;
+        margin: 60px 0 80px 0;
+    }
+    .home_figure .home_image{
+        width: 100%;
+    }
+}
+@media(min-width: 900px){
+    .home{
+        width: 85vw;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+    .home div{
+        max-width: 450px;
+    }
+    .home div > *{
+        text-align: start;
+    }
+    .home:last-child{
+        align-items: end;
+    }
+    .home_title{
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.72px;
+    }
+    .home_title span{
+        font-size: 150px;
+        line-height: 192px;
+    }
+    .home_copy{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .home_figure{
+        width: 274px;
+        height: 274px;
+        /* margin-bottom: 10px; */
+    }
+}

@@ -12,35 +12,36 @@
 </head>
 <body>
   <header class="header">
-    <figure class="header-menu_logo">
+    <figure class="header-logo">
       <img src="./assets/shared/logo.svg" alt="">
     </figure>
-    <nav class="header-menu">
-      <ul>
-        <li class="header-menu-hamburger">
-            <img src="./assets/shared/icon-hamburger.svg" alt="">
-            <ul>
-              <li>00 Home</li>
-              <li>01 Destination</li>
-              <li>02 Crew</li>
-              <li>03 Technology</li>
-            </ul>
-        </li>
+    <nav class="main-nav">
+      <figure class="main-nav_hamburger">
+        <img src="./assets/shared/icon-hamburger.svg" alt="">
+      </figure>
+      <ul class="main-nav_list">
+        <li class="main-nav_home"><span>00</span>HOME</li>
+        <li class="main-nav_destination"><span>01</span>DESTINATION</li>
+        <li class="main-nav_crew"><span>02</span>CREW</li>
+        <li class="main-nav_technology"><span>03</span>TECHNOLOGY</li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="main-content">
     <div>
-      <h1>So, you want to travel to<br>
-        <span>Space</span>
+      <h1 class="main-title">SO, YOU WANT TO TRAVEL TO<br>
+        <span>SPACE</span>
       </h1>
-      <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+      <p class="main-copy">Let’s face it; if you want to go to space, you might as well genuinely go to 
         outer space and not hover kind of on the edge of it. Well sit back, and relax 
         because we’ll give you a truly out of this world experience!</p>
     </div>
-    <figure>
+    <figure class="main-explore">
       <img src="./assets/home/Group.png" alt="">
     </figure>
   </main>
+  <script src="./src/nodes.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./src/navigation.js"></script>
 </body>
 </html>
