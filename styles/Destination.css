@@ -44,12 +44,13 @@
     justify-content: space-between;
     text-transform: uppercase;
 }
-.destination_nav-item{
+.destination_nav-item a{
     font-family: 'Barlow Condensed';
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 2.36px;
     color: #D0D6F9;
+    text-decoration: none;
 }
 .destination_planet{
     font-family: 'Bellefair';
@@ -57,6 +58,7 @@
     line-height: 64px;
     color: #fff;
     margin: 30px 0 10px 0;
+    text-transform: uppercase;
 }
 .destination_planet-description{
     font-family: 'Barlow';
@@ -66,6 +68,9 @@
     border-bottom: 2px solid rgba(56, 59, 75, 1);
     padding-bottom: 30px
     ;
+}
+.destination_planet-description::first-letter{
+    text-transform: uppercase;
 }
 .destination_trip{
     margin: 30px 0 20px 0;
@@ -112,7 +117,7 @@
     .destination_nav{
         max-width: 300px;
     }
-    .destination_nav-item{
+    .destination_nav-item a{
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 2.7px;
@@ -170,6 +175,9 @@
     }
     .destination_nav{
         margin: 0;
+    }
+    .destination_nav-list{
+        min-width: 290px;
     }
     .destination_planet,
     .destination_planet-description,

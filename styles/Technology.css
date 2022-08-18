@@ -1,0 +1,196 @@
+.technology{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% repeat(10, 1fr) 5%;
+    grid-template-rows: repeat(8, minmax(60px, auto));
+    text-align: center;
+}
+.technology_statement{
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #fff;
+    grid-column: 2 / 12;
+}
+.technology_statement span{
+    font-weight: bold;
+    opacity: 25%;
+}
+.technology_figure{
+    grid-column: 1 / -1;
+    grid-row: 2 / 5;
+}
+.technology_image{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.technology_nav{
+    grid-column: 5 / 9;
+    grid-row: 5 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.technology_nav-list{
+    min-width: 168px;
+    width: 100%;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.technology_nav-item{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-family: 'Bellefair';
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #fff;
+    border: 1px solid rgba(rgb(255, 255, 255), 0.25) ;
+    list-style: none;
+    text-align: center;
+}
+.technology_nav-item:hover{
+    background-color: #fff;
+    color: #0B0D17;
+    cursor: pointer;
+}
+.technology_chosen{
+    grid-column: 2 / 12;
+    grid-row: 6 / 8;
+}
+.technology_paragraph{
+    font-family: 'Barlow Condensed';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.36px;
+    color: #D0D6F9;
+    height: 24px;
+}
+.technology_paragraph::after{
+    content: '...';
+}
+:where(.technology_paragraph, .technology_statement){
+    text-transform: uppercase;
+}
+.technology_vehicle{
+    font-family: 'Bellefair';
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    height: 48px;
+}
+.technology_copy{
+    font-family: 'Barlow';
+    font-size: 15px;
+    Line-height: 25px;
+    color: #D0D6F9;
+}
+.technology_copy::first-letter{
+    text-transform: uppercase;
+}
+@media(min-width: 650px){
+    .technology{
+        grid-template-rows: repeat(9, minmax(80px, auto));
+    }
+    .technology_statement{
+        text-align: start;
+    }
+    .technology_nav-list{
+        max-width: 220px;
+        height: 140px;
+    }
+    .technology_nav-item{
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 1.5px;
+        line-height: 60px;
+    }
+    .technology_chosen{
+        grid-column: 4 / 10;
+        min-width: 370px;
+    }
+    .technology_paragraph{
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        height: 32px;
+    }
+    .technology_vehicle{
+        font-size: 40px;
+        line-height: 46px;
+        height: 64px;
+    }
+    .technology_copy{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+@media(min-width: 900px){
+    .technology{
+        /* column-gap: 60px; */
+    }
+    .technology_statement{
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.72px;
+        grid-row: 1 / 2;
+        grid-column: 3 / 12;
+        align-self: flex-end;
+    }
+    .technology_statement span{
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.72px;
+    }
+    .technology_figure{
+        grid-column: 9 / -1;
+        grid-row: 3 / 9;
+    }
+    .technology_nav{
+        justify-content: start;
+        grid-column: 3 / 4;
+        grid-row: 4 / 8;
+    }
+    .technology_nav-list{
+        min-width: min-content;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .technology_nav-item{
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+        line-height: 80px;
+        letter-spacing: 2px;
+    }
+    .technology_chosen{
+        grid-column: 4 / 8;
+        grid-row: 4 / 8;
+        text-align: start;
+        /* min-width: 515px; */
+    }
+    .technology_paragraph{
+        font-size: 16px;
+    }
+    .technology_vehicle{
+        min-width: 515px;
+        font-size: 56px;
+        line-height: 64px;
+        height: 80px;
+    }
+    .technology_copy{
+        font-size: 18px;
+        line-height: 32px;
+    }
+}

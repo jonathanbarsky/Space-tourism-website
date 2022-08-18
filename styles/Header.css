@@ -26,7 +26,17 @@
 .header-menu-hamburger ul{
     display: none;
 }
-.header-menu--nav li {
+.header-menu--nav li span{
+    margin: 0 5px 0 20px;
+    font-weight: bold;
+    font-family: 'Barlow' Condensed;
+    font-size: 16px;
+    line-height: 19px;
+    vertical-align: Top;
+    letter-spacing: 2.7px;
+    color: #fff;
+}
+.header-menu--nav li a{
     font-family: 'Barlow' Condensed;
     font-weight: normal;
     font-size: 16px;
@@ -34,11 +44,16 @@
     vertical-align: Top;
     letter-spacing: 2.7px;
     color: #fff;
+    text-decoration: none;
 }
-.header-menu--nav li span{
-    margin: 0 5px 0 20px;
-    font-weight: bold;
-}
+/* .header-menu--nav li > a:hover::After{
+    height: 0.5rem;
+    width: 5rem;
+    background-color: orange;
+    content: '';
+    display: block;
+    margin: 1rem auto 0 auto; 
+} */
 @media(min-width: 650px){
     .header-menu{
         background-color: rgba(255, 255, 255, 0.04);
@@ -46,7 +61,7 @@
     }
     .header-menu-hamburger{
         width: 60vw;
-        min-width: 350px;
+        min-width: 424px;
         border-radius: 10px;
         height: 70px;
         padding: 0 64px 0 32px;
@@ -70,14 +85,25 @@
         line-height: 17px;
         letter-spacing: 2.36px;
     }
-    .header-menu-hamburger .header-menu--nav li:hover{
+    .header-menu-hamburger .header-menu--nav li a:hover{
         text-decoration: underline 3px rgba(255, 255, 255, 0.5);
         cursor: pointer;
     } 
-    .header-menu-hamburger .header-menu--nav li:active{
+    .header-menu-hamburger .header-menu--nav li a:active{
         text-decoration:  underline 3px rgba(255, 255, 255, 1);
     }
     .header-menu--nav li span{
         display: none;
+    }
+}
+@media(min-width: 900px){
+    .header-menu{
+        min-width: 600px;
+    }
+    .header-menu--nav{
+        min-width: 515px;
+    }
+    .header-menu--nav li span{
+        display: inline-flex;
     }
 }

@@ -38,7 +38,7 @@ html {
 body{
     width: 100%;
     height: auto;
-    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    background-image: url(../src/assets/technology/background-technology-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
