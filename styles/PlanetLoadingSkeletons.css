@@ -1,0 +1,185 @@
+:root{
+    --skeleton-gradient: linear-gradient(to right, #eeeeee29, #dddddd36 10%, #eeeeee1c 33%);;
+}
+.skeleton_statement,
+.skeleton_planet,
+.skeleton_nav,
+.skeleton_name,
+.skeleton_copy,
+.skeleton_travel-distance,
+.skeleton_travel-time{
+    background-size: 400% 400%;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: preloadAnimation;
+    animation-timing-function: linear;
+    background: var(--skeleton-gradient);
+    border-radius: 20px;
+}
+.skeleton{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.skeleton_statement{
+    background: var(--skeleton-gradient);
+    margin: 10px 0;
+    height: 19px;
+    width: 170px;
+}
+.skeleton_body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.skeleton_body .skeleton_info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.skeleton_container-planet{
+    margin: 20px 0;
+    width: 170px;
+    height: 170px;
+}
+.skeleton_planet{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.skeleton_nav{
+    min-width: 230px;
+    width: 65%;
+    margin: 0 auto;
+    height: 17px;
+}
+.skeleton_name{
+    width: 200px;
+    height: 64px;
+    margin: 30px 0 20px 0;
+}
+.skeleton_copy{
+    width: 100%;
+    height: 75px;
+    margin-bottom: 30px;
+}
+.skeleton_travel{
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skeleton_travel-distance{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.skeleton_travel-time{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 30px;
+
+}
+@media(min-width: 650px){
+    .skeleton{
+        width: 90vw;
+    } 
+    .skeleton_statement{
+        align-self: flex-start;
+        height: 24px;
+        width: 200px;
+    }
+    .skeleton_container-planet{
+        width: 300px;
+        height: 300px;
+    }
+    .skeleton_nav{
+        max-width: 300px;
+        margin: 20px auto;
+        height: 19px;
+    }
+    .skeleton_name{
+        width: 300px;
+        height: 92px;
+        margin: 40px 0 50px 0;
+    }
+    .skeleton_copy{
+        width: 75vw;
+        height: 84px;
+    }
+    .skeleton_travel{
+        width: 60vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media(min-width: 900px){
+    .skeleton{
+        width: 80vw;
+        height: calc(100vh - 100px);
+    } 
+    .skeleton_statement{
+        height: 40px;
+        width: 300px;
+    }
+    .skeleton_body{
+        width: 100%;
+        margin: 60px 0 0 70px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .skeleton_container-planet{
+        min-width: 300px;
+        width: 40vw;
+        height: 40vw;
+        max-width: 445px;
+        max-height: 445px;
+
+    }
+    .skeleton_body .skeleton_info{
+        align-items: flex-start;
+        margin-left: 20px;
+        min-width: 500px;
+        max-width: 700px;
+    }
+    .skeleton_nav{
+        max-width: 300px;
+        margin: 0;
+        height: 19px;
+    }
+    .skeleton_name{
+        width: 280px;
+        height: 92px;
+        margin: 50px 0 30px 0;
+    }
+    .skeleton_copy{
+        width: 70%;
+        height: 128px;
+        margin-bottom: 60px;
+    }
+    .skeleton_travel{
+        width: 80%;
+        margin: 0;
+        flex-direction: row;
+        margin-bottom: 20px;
+        gap: 20px;
+        justify-content: space-between;
+    }
+}
+
+
+@keyframes preloadAnimation{
+    0%{
+        background-position: -769px;
+    }
+    100%{
+        background-position: 769px;
+    }
+}

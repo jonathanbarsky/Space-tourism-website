@@ -1,16 +1,9 @@
 .crew{
-    width: 80vw;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: center;
-}
-.crew_statement,
-.crew_chosen,
-.crew_img,
-.crew_nav{
     width: 100%;
+    display: grid;
+    grid-template-columns: 5% repeat(10, 1fr) 5%;
+    grid-template-rows: repeat(4, minmax(60px, auto));
+    text-align: center;
 }
 .crew_statement{
     font-family: 'Barlow Condensed';
@@ -21,6 +14,7 @@
     color: #fff;
     text-transform: uppercase;
     margin: 10px 0 20px 0;
+    grid-column: 2 / 12;
 }
 .crew_statement span{
     font-weight: Bold;
@@ -31,13 +25,17 @@
     width: 100%;
     border-bottom: 1px solid 
     rgba(56, 59, 75, 1);
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
 }
 .crew_img{
     width: 177.12px;
 }
 .crew_nav{
-    margin: 10px 0 25px 0;
+    margin: 10px 0 10px 0;
+    grid-column: 2 / 12;
+    align-self: center;
 }
 .crew_nav-list{
     width: 90px;
@@ -49,6 +47,7 @@
 .crew_nav-item{
     width: 10px;
     height: 10px;
+    font-weight: 400;
     background-color: 
     rgba(255, 255, 255, 0.1744);
     border-radius: 50%;
@@ -56,6 +55,10 @@
 .crew_nav-item:hover{
     background-color: rgba(255, 255, 255, 1);
     cursor: pointer;
+}
+.crew_chosen{
+    grid-column: 2 / 12;
+    grid-row: 4 / 6;
 }
 .crew_rank{
     text-transform: uppercase;
@@ -77,17 +80,17 @@
     text-transform: uppercase;
 }
 .crew_copy{
-    font-family: Barlow;
+    font-family: "Barlow";
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
     color: #D0D6F9;
     margin: 20px 0 80px 0;
 }
+.crew_copy::first-letter{
+    text-transform: uppercase;
+}
 @media(min-width: 650px){
-    .crew{
-        width: 90vw;
-    }
     .crew_statement{
         text-align: start;
         font-size: 20px;
@@ -99,19 +102,16 @@
         line-height: 24px;
         letter-spacing: 3.38px;
     }
-
-    .crew_nav{
-        order:1
-    }
     .crew_figure{
-        order: 2;
         margin: 10px 0 0 0;
+        grid-row: 4 / 6;
     }
     .crew_img{
         width: 456.37px,
     }
     .crew_chosen{
         margin: 30px 0 0 0;
+        grid-row: 2 / 3;
     }
     .crew_rank{
         font-size: 24px;
@@ -131,24 +131,48 @@
     }
 }
 @media(min-width: 900px){
+    .crew{
+        height: calc(100vh - 100px);
+    }
     .crew_statement,
     .crew_nav,
     .crew_chosen{
-        width: 51%;
+        grid-column: 3 / 6;
     }
     .crew_statement{
-        /* order: 1; */
-        /* min-height: min-content; */
-    }
-    .crew_figure{
-        /* order: 2; */
-        width: 49%;
-        /* height: 100%; */
-    }
-    .crew_nav{
-        /* order: 3; */
+        align-self: flex-start;
+        grid-row: 1 / 2;
     }
     .crew_chosen{
-        /* order: 4; */
+        grid-row: 2 / 4;
+        text-align: start;
+        align-self: center;
+    }
+    .crew_copy{
+        margin-bottom: 0;
+    }
+    .crew_nav{
+        grid-row: 4 / 5;
+        align-self: center;
+        margin: 0 0 10px 0;
+    }
+    .crew_nav-list{
+        width: 132px;
+        margin: 0;
+    }
+    .crew_nav-item{
+        width: 15px;
+        height: 15px;
+    }
+    .crew_figure{
+        max-height: 550px;
+        margin: 0;
+        grid-column: 6 / 13;
+        grid-row: 1 / 5;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        align-self: flex-end;
     }
 }

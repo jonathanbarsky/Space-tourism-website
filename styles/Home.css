@@ -10,7 +10,7 @@
     margin: 15px 0 25px 0;
 }
 .home_title{
-    font-family: 'Barlow' Condensed;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -21,7 +21,6 @@
 
 .home_title span{
     font-family: 'Bellefair';
-    font-style: Regular;
     font-size: 80px;
     line-height: 120px;
     letter-spacing: 1px;
@@ -45,8 +44,6 @@
 @media (min-width: 650px){
     .home{
         width: 55vw;
-        /* background-image: url(../src/assets/home/background-home-desktop.jpg); */
-
     }
     .home div{
         margin-top: 70px;
@@ -78,9 +75,9 @@
 @media(min-width: 900px){
     .home{
         width: 85vw;
+        height: calc(100vh - 100px);
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 100px;
     }
     .home div{
         max-width: 450px;
@@ -107,6 +104,5 @@
     .home_figure{
         width: 274px;
         height: 274px;
-        /* margin-bottom: 10px; */
     }
 }
