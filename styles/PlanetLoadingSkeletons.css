@@ -144,7 +144,7 @@
     }
     .skeleton_body .skeleton_info{
         align-items: flex-start;
-        margin-left: 20px;
+        margin-left: 40px;
         min-width: 500px;
         max-width: 700px;
     }

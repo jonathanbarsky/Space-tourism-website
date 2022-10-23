@@ -107,7 +107,7 @@
     }
     .skeletonTechnology_portraitContainer{
         grid-column: 8 / -1;
-        grid-row: 2 / 8;
+        grid-row: 2 / 10;
     }
     .skeletonTechnology_portrait{
         width: 100%;

@@ -21,7 +21,7 @@ class Crew extends React.Component{
         if(!!this.state.loading){
             setTimeout(() => this.setState(prevState => ({
                 loading: false,
-            })), 100000)
+            })), 1000)
         }
     }
     render(){

@@ -46,14 +46,6 @@
     color: #fff;
     text-decoration: none;
 }
-/* .header-menu--nav li > a:hover::After{
-    height: 0.5rem;
-    width: 5rem;
-    background-color: orange;
-    content: '';
-    display: block;
-    margin: 1rem auto 0 auto; 
-} */
 @media(min-width: 650px){
     .header-menu{
         background-color: rgba(255, 255, 255, 0.04);

@@ -29,21 +29,8 @@ html {
     --letter-spacing-small: 0.236rem;
     --letter-spacing-small-mid: 0.27rem;
 
-                        /*  lletter weight */
+                        /*  letter weight */
     --weight-medium: 400;
     --weight-hight: 700;
 }
 
-body{
-    width: 100%;
-    height: auto;
-    background-image: url(../src/assets/home/background-home-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-@media(min-width: 900px){
-    body{
-        background-image: url(../src/assets/home/background-home-desktop.jpg);
-    }
-}
