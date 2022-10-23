@@ -51,12 +51,10 @@ function Destination({state, setState}){
    }, [state.loading])
     if(!!state.loading){
         return(
-            // <p style={{color: 'white'}}>Cargando, no desesperes</p>
             <PlanetLoadingSkeleton />
         )
     } else{
         return(
-            // <PlanetLoadingSkeleton />
             <main className='destination'>
                     <h2 className='destination_statement'><span>01</span>pick your destination</h2>
                     <div className='destination_body'>

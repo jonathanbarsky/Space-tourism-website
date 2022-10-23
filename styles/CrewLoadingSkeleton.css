@@ -1,0 +1,178 @@
+:root{
+    --skeleton-gradient: linear-gradient(to right, #eeeeee29, #dddddd36 10%, #eeeeee1c 33%);;
+}
+.skeletonCrew_statement,
+.skeletonCrew_portrait-head,
+.skeletonCrew_portrait-body,
+.skeletonCrew_nav,
+.skeletonCrew_rank,
+.skeletonCrew_name,
+.skeletonCrew_copy{
+    background-size: 400% 400%;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: preloadAnimation;
+    animation-timing-function: linear;
+    background: var(--skeleton-gradient);
+    border-radius: 20px;
+}
+.skeletonCrew{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% repeat(10, 1fr) 5%;
+    grid-template-rows: repeat(4, minmax(60px, auto));
+    text-align: center;
+}
+.skeletonCrew_statement{
+    height: 19px;
+    margin: 10px 0 20px 0;
+    grid-column: 5 / 9;
+}
+.skeletonCrew_portraitContainer{
+    width: 100%;
+    margin: 20px 0 10px 0;
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+    
+}
+.skeletonCrew_portrait-head{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 8px auto;
+}
+.skeletonCrew_portrait-body{
+    width: 130px;
+    height: 170px;
+    margin: 0 auto;
+    border-radius: 60px 60px 0 0;
+}
+.skeletonCrew_nav{
+    margin: 10px 0 10px 0;
+    grid-column: 6 / 8;
+    align-self: center;
+    height: 10px;
+}
+.skeletonCrew_info{
+    grid-column: 2 / 12;
+    grid-row: 4 / 6;
+}
+.skeletonCrew_rank{
+    width: 30%;
+    height: 18px;
+    margin: 8px auto 16px auto;
+}
+.skeletonCrew_name{
+    width: 50%;
+    height: 28px;
+    margin: 0 auto;
+}
+.skeletonCrew_copy{
+    height: 100px;
+    margin: 24px 0 80px 0;
+}
+@media(min-width: 650px){
+    .skeletonCrew_statement{
+        align-self: start;
+        height: 24px;
+        grid-column: 1 / 5;
+    }
+    .skeletonCrew_portraitContainer{
+        margin: 10px 0 0 0;
+        grid-row: 4 / 6;
+    }
+    .skeletonCrew_portrait-head{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 0 auto 8px auto;
+    }
+    .skeletonCrew_portrait-body{
+        width: 260px;
+        height: 340px;
+        margin: 0 auto;
+        border-radius: 120px 120px 0 0;
+    }
+    .skeletonCrew_nav{
+        grid-row: 3 / 4;
+    }
+    .skeletonCrew_info{
+        margin: 30px 0 0 0;
+        grid-row: 2 / 3;
+    }
+    .skeletonCrew_rank{
+        height: 32px;
+        margin: 8px auto 16px auto;
+    }
+    .skeletonCrew_name{
+        height: 56px;
+        margin: 0 auto 0 auto;
+    }
+    .skeletonCrew_copy{
+        width: 50vw;
+        max-width: 450px;
+        margin: 32px auto 24px auto ;
+        height: 120px;
+    }
+}
+@media(min-width: 900px){
+    .skeletonCrew{
+        height: calc(100vh - 100px);
+    }
+    .skeletonCrew_info{
+        grid-column: 3 / 6;
+    }
+    .skeletonCrew_statement{
+        grid-row: 1 / 2;
+        grid-column: 3 / 6;
+    }
+    .skeletonCrew_info{
+        grid-row: 2 / 4;
+        align-self: center;
+    }
+    .skeletonCrew_rank{
+        width: 60%;
+        margin: 8px 0 16px 0;
+    }
+    .skeletonCrew_name{
+        width: 100%;
+    }
+    .skeletonCrew_copy{
+        margin-bottom: 0;
+    }
+    .skeletonCrew_nav{
+        grid-row: 4 / 5;
+        grid-column: 3 / 4;
+        margin: 0 0 10px 0;
+        height: 15px;
+    }
+    .skeletonCrew_portraitContainer{
+        grid-column: 9 / 11;
+        grid-row: 1 / 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-end;
+    }
+    .skeletonCrew_portrait-head{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 0;
+    }
+    .skeletonCrew_portrait-body{
+        width: 260px;
+        height: 340px;
+        margin: 0;
+        border-radius: 120px 120px 0 0;
+    }
+}
+@keyframes preloadAnimation{
+    0%{
+        background-position: -769px;
+    }
+    100%{
+        background-position: 769px;
+    }
+}

@@ -25,7 +25,6 @@
     margin: 0 auto;
 }
 .skeleton_statement{
-    background: var(--skeleton-gradient);
     margin: 10px 0;
     height: 19px;
     width: 170px;
