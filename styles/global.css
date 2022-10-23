@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    /* font-size: 62.5%; */
+}
+:root{
+    --barlow: 'Barlow', sans-serif;
+    --barlow-condensed: 'Barlow Condensed', sans-serif;
+    --bellefair: 'Bellefair', serif;
+
+    /*          colors  */
+    --white: #fff;
+    --grey: #D0D6F9;
+
+    /* "tipography" */
+    --small: 1.4rem;
+    --small-medium: 1.5rem;
+    --medium: 1.6rem;
+    --hight: 2.4rem;
+    /*                  alto de la linea */
+    --line-height-small: 1.68rem;
+    --line-height-small-mid: 1.92rem;
+    --line-height-medium: 2.5rem;
+    --line-height-hight: 2.75rem;
+    /*              letter spacing */
+    --letter-spacing-small: 0.236rem;
+    --letter-spacing-small-mid: 0.27rem;
+
+                        /*  letter weight */
+    --weight-medium: 400;
+    --weight-hight: 700;
+}
+
