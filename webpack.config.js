@@ -70,7 +70,7 @@ module.exports = {
             }
         ),
         new MiniCssExtractPlugin({
-            filename: '[name.css'
+            filename: '[name.css]'
         })
     ],
     devServer: {
