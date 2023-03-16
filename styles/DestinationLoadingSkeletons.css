@@ -130,12 +130,11 @@
     }
     .skeleton_body{
         width: 100%;
-        margin: 60px 0 0 70px;
         flex-direction: row;
         justify-content: space-between;
     }
     .skeleton_container-planet{
-        min-width: 300px;
+        min-width: 30vw;
         width: 40vw;
         height: 40vw;
         max-width: 445px;
@@ -143,9 +142,9 @@
 
     }
     .skeleton_body .skeleton_info{
+        min-width: 330px;
+        width: 45%;
         align-items: flex-start;
-        margin-left: 40px;
-        min-width: 500px;
         max-width: 700px;
     }
     .skeleton_nav{
@@ -159,12 +158,12 @@
         margin: 50px 0 30px 0;
     }
     .skeleton_copy{
-        width: 70%;
+        width: 100%;
         height: 128px;
         margin-bottom: 60px;
     }
     .skeleton_travel{
-        width: 80%;
+        width: 100%;
         margin: 0;
         flex-direction: row;
         margin-bottom: 20px;

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/PlanetLoadingSkeletons.css"
+import "../../styles/DestinationLoadingSkeletons.css"
 
 function PlanetLoadingSkeleton(){
     return(

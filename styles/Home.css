@@ -83,6 +83,7 @@ body{
 @media(min-width: 900px){
     body{
         background-image: url(../src/assets/home/background-home-desktop.jpg);
+        background-attachment: fixed;
     }
     .home{
         width: 85vw;

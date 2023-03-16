@@ -7,7 +7,7 @@
 body{
     width: 100%;
     height: auto;
-    background-image: url(../assets/home/background-home-mobile.jpg);
+    /* background-image: url(../assets/home/background-home-mobile.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -125,7 +125,7 @@ main figure img {
 
 @media(min-width: 450px){
     body{
-        background-image: url(../assets/home/background-home-tablet.jpg);
+        /* background-image: url(../assets/home/background-home-tablet.jpg); */
     }
     .main-nav_hamburger {
         display: none;
@@ -203,7 +203,7 @@ main figure img {
 
 @media(min-width: 650px){
     body{
-        background-image: url(../assets/home/background-home-desktop.jpg);
+        /* background-image: url(../assets/home/background-home-desktop.jpg); */
     }
 
     .main-nav{

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/Crew.css'
 import commander from '../assets/crew/image-douglas-hurley.png';
 import missionSpecialist from '../assets/crew/image-mark-shuttleworth.png';
 import pilot from '../assets/crew/image-victor-glover.png';

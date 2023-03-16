@@ -1,3 +1,9 @@
+body{
+    background-image: url("../src/assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .destination{
     width: 80vw;
     display: flex;
@@ -99,7 +105,7 @@
 }
 @media(min-width: 650px){
     body{
-        background-image: url("../src//assets/destination/background-destination-tablet.jpg");
+        background-image: url("../src/assets/destination/background-destination-tablet.jpg");
     }
     .destination{
         width: 90vw;
@@ -149,16 +155,16 @@
 }
 @media(min-width: 900px){
     body{
-        /* background-image: url("../src//assets/destination/background-destination-desktop.jpg"); */
+        background-image: url("../src/assets/destination/background-destination-desktop.jpg");
     }
     .destination{
         width: 80vw;
         height: calc(100vh - 100px);
     }
     .destination_statement{
-        font-size: 28px;
-        line-height: 34px;
-        letter-spacing: 4.72px;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.38px;
         margin: 30px 0 30px 0;
     }
     .destination_statement span{
@@ -197,7 +203,7 @@
         text-align: start;
     }
     .destination_planet-description{
-        font-size: 18px;
-        line-height: 32px;
-            }
+        font-size: 16px;
+        line-height: 28px;
+        }
 }

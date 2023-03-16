@@ -4,8 +4,7 @@ import mars from '../assets/destination/image-mars.png'
 import moon from '../assets/destination/image-moon.png'
 import europe from '../assets/destination/image-europa.png'
 import titan from '../assets/destination/image-titan.png'
-import '../../styles/Destination.css'
-import { PlanetLoadingSkeleton } from './PlanetLoadingSkeleton';
+import { PlanetLoadingSkeleton } from './DestinationLoadingSkeleton';
 import backgroundDestinationMobile from "../assets/destination/background-destination-mobile.jpg"
 import backgroundDestinationTablet from "../assets/destination/background-destination-tablet.jpg"
 import backgroundDestinationDesktop from "../assets/destination/background-destination-desktop.jpg"
@@ -47,15 +46,15 @@ function Destination({state, setState}){
         ...state,
         loading: false,
     })
-    const onDestination= () =>setState({
+    const onDestination= () => setState({
         ...state,
         backgroundImage: backgroundDestinationMobile,
     })
-   React.useEffect(() => {
-        if(!!state.loading){
-            setTimeout(() => onLoad(), 1000)
-        }
-   }, [state.loading])
+React.useEffect(() => {
+    if(!!state.loading){
+        setTimeout(() => onLoad(), 1000)
+    }
+}, [state.loading])
 
     if(!!state.loading){
         return(
@@ -104,7 +103,6 @@ function Destination({state, setState}){
                         </div>
                     </div>
                 </div>
-                ))
             </main>
         );
     }

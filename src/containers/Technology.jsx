@@ -1,7 +1,6 @@
 import React from 'react';
 import launch from '../assets/technology/image-launch-vehicle-landscape.jpg'
 import launchDesktop from '../assets/technology/image-launch-vehicle-portrait.jpg'
-import '../../styles/Technology.css'
 import spaceport from '../assets/technology/image-spaceport-landscape.jpg'
 import spaceportDesktop from '../assets/technology/image-spaceport-portrait.jpg'
 import capsule from '../assets/technology/image-space-capsule-landscape.jpg'
