@@ -1,5 +1,5 @@
 body{
-    background-image: url("../src/assets/crew/background-crew-mobile.jpg");
+    /* background-image: url("../src/assets/crew/background-crew-mobile.jpg"); */
 }
 .crew{
     width: 100%;
@@ -7,6 +7,7 @@ body{
     grid-template-columns: 5% repeat(10, 1fr) 5%;
     grid-template-rows: repeat(4, minmax(60px, auto));
     text-align: center;
+    margin-top: 90px;
 }
 .crew_statement{
     font-family: 'Barlow Condensed';
@@ -95,7 +96,7 @@ body{
 }
 @media(min-width: 650px){
     body{
-        background-image: url("../src/assets/crew/background-crew-tablet.jpg");
+        /* background-image: url("../src/assets/crew/background-crew-tablet.jpg"); */
     }
     .crew_statement{
         text-align: start;
@@ -138,7 +139,7 @@ body{
 }
 @media(min-width: 900px){
     body{
-        background-image: url("../src/assets/crew/background-crew-desktop.jpg");
+        /* background-image: url("../src/assets/crew/background-crew-desktop.jpg"); */
     }
     .crew{
         height: calc(100vh - 100px);

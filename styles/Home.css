@@ -12,7 +12,8 @@ body{
     width: 80vw;
     height: auto;
     align-items: center;
-    margin: 0 auto;
+    margin: 90px auto 0 auto;
+    
 }
 .home div{
     margin: 15px 0 25px 0;

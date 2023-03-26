@@ -8,6 +8,7 @@ import { PlanetLoadingSkeleton } from './DestinationLoadingSkeleton';
 import backgroundDestinationMobile from "../assets/destination/background-destination-mobile.jpg"
 import backgroundDestinationTablet from "../assets/destination/background-destination-tablet.jpg"
 import backgroundDestinationDesktop from "../assets/destination/background-destination-desktop.jpg"
+import "../../styles/Destination.css";
 
 function Destination({state, setState}){
     const onMoon = () => setState({

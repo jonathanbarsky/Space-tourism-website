@@ -4,6 +4,7 @@ import missionSpecialist from '../assets/crew/image-mark-shuttleworth.png';
 import pilot from '../assets/crew/image-victor-glover.png';
 import engineer from '../assets/crew/image-anousheh-ansari.png';
 import { CrewLoadingSkeleton } from './CrewLoadingSkeleton';
+import "../../styles/Crew.css"
 
 class Crew extends React.Component{
     constructor(props){

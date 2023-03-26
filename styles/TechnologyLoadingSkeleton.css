@@ -21,6 +21,7 @@
     display: grid;
     grid-template-columns: 5% repeat(10, 1fr) 5%;
     grid-template-rows: repeat(8, minmax(60px, auto));
+    margin-top: 90px;
 }
 .skeletonTechnology_statement{
     height: 24px;

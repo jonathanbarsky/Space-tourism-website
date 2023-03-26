@@ -6,6 +6,7 @@ import spaceportDesktop from '../assets/technology/image-spaceport-portrait.jpg'
 import capsule from '../assets/technology/image-space-capsule-landscape.jpg'
 import capsuleDesktop from '../assets/technology/image-space-capsule-portrait.jpg'
 import {TechnologyLoadingSkeleton} from"./TechnologyLoadingSkeleton"
+import '../../styles/Technology.css';
 
 class Technology extends React.Component{
     constructor(props){

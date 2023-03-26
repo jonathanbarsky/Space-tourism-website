@@ -1,5 +1,5 @@
 body{
-    background-image: url("../src/assets/destination/background-destination-mobile.jpg");
+    /* background-image: url("../src/assets/destination/background-destination-mobile.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 auto;
+    margin: 90px auto 0 auto;
 }
 .destination_statement{
     text-transform: uppercase;
@@ -105,7 +105,7 @@ body{
 }
 @media(min-width: 650px){
     body{
-        background-image: url("../src/assets/destination/background-destination-tablet.jpg");
+        /* background-image: url("../src/assets/destination/background-destination-tablet.jpg"); */
     }
     .destination{
         width: 90vw;
@@ -155,7 +155,7 @@ body{
 }
 @media(min-width: 900px){
     body{
-        background-image: url("../src/assets/destination/background-destination-desktop.jpg");
+        /* background-image: url("../src/assets/destination/background-destination-desktop.jpg"); */
     }
     .destination{
         width: 80vw;
